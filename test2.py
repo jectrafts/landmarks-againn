@@ -43,14 +43,30 @@ with mp_hands.Hands(
                 y5 = five_landmark.y
                 z5 = five_landmark.z
                 # print("x =", x5, ", y =", y5,)
-                seven_landmark = hand_landmarks.landmark[8]
-                x8 = seven_landmark.x
-                y8 = seven_landmark.y
-                z8 = seven_landmark.z
+                seven_landmark = hand_landmarks.landmark[4]
+                x4 = seven_landmark.x
+                y4 = seven_landmark.y
+                z4 = five_landmark.z
                 # print("x =", x7, ", y =", y7,)
+                five_landmark = hand_landmarks.landmark[8]
+                x8 = five_landmark.x
+                y8 = five_landmark.y
+                z8 = five_landmark.z
+                # print("x =", x5, ", y =", y5,)
+                seven_landmark = hand_landmarks.landmark[20]
+                x20 = seven_landmark.x
+                y20= seven_landmark.y
+                z20 = five_landmark.z
+                # print("x =", x7, ", y =", y7,)
+                five_landmark = hand_landmarks.landmark[17]
+                x17 = five_landmark.x
+                y17= five_landmark.y
+                z17= five_landmark.z
+                # print("x =", x5, ", y =", y5,)
+                if y8 < y5 and y20 < y17 :
+                    if y4  > y5 * 1.05 :
+                        print('hi')
 
-                if z8*-1 >= z5 *-1.3 and z8*-1 >= z5 *-0.001   :
-                    print('u')
 
         # Flip the image horizontally for a selfie-view display.
         cv2.imshow('MediaPipe Hands', cv2.flip(image, 1))

@@ -1,4 +1,4 @@
-if closey >= 0.01 or closey >= 0.01:
+if y8 > y5 and y20 > y17 :
     print('close')
     hand_state == 0
 
@@ -8,21 +8,9 @@ else:
 
 
 hi(tilt right)
-
-five_landmark = hand_landmarks.landmark[4]
-x5 = five_landmark.x
-y5 = five_landmark.y
-z5 = five_landmark.z
-# print("x =", x5, ", y =", y5,)
-seven_landmark = hand_landmarks.landmark[3]
-x8 = seven_landmark.x
-y8 = seven_landmark.y
-z8 = five_landmark.z
-# print("x =", x7, ", y =", y7,)
-y11 = y8 * 7
-
-if y8 <= y5:
-    print('hi')
+if y8 < y5:
+    if y4 > y5 * 1.05:
+        print('hi')
 
 i
 
